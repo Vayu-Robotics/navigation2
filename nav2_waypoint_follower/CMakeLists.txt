@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(nav2_waypoint_follower)
 
+
 # Try for OpenCV 4.X, but settle for whatever is installed
 find_package(OpenCV 4 QUIET)
 if(NOT OpenCV_FOUND)
@@ -22,6 +23,8 @@ find_package(nav2_util REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(nav2_core REQUIRED)
 find_package(pluginlib REQUIRED)
+find_package(robot_localization REQUIRED)
+find_package(geographic_msgs REQUIRED)
 
 nav2_package()
 
@@ -57,6 +60,7 @@ set(dependencies
   image_transport
   cv_bridge
   OpenCV
+  robot_localization
 )
 
 ament_target_dependencies(${executable_name}
