@@ -22,7 +22,7 @@ find_package(nav2_navfn_planner REQUIRED)
 find_package(nav2_planner REQUIRED)
 find_package(navigation2)
 find_package(angles REQUIRED)
-find_package(behaviortree_cpp_v3 REQUIRED)
+find_package(behaviortree_cpp REQUIRED)
 
 nav2_package()
 
@@ -44,7 +44,7 @@ set(dependencies
   nav2_planner
   nav2_navfn_planner
   angles
-  behaviortree_cpp_v3
+  behaviortree_cpp
 )
 
 if(BUILD_TESTING)

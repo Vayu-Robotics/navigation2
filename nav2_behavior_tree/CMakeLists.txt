@@ -34,7 +34,7 @@ set(dependencies
   sensor_msgs
   nav2_msgs
   nav_msgs
-  behaviortree_cpp_v3
+  behaviortree_cpp
   tf2
   tf2_ros
   tf2_geometry_msgs
